@@ -5,12 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- font setup -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+.eb-garamond-<uniquifier> {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+</style>
+
 <body>
-    <header class="container mx-auto">
+    <header class="container mx-auto ">
         <!-- navbar design  -->
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 pt-12">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -45,7 +86,27 @@
           </div>
     </header>
     
-    <main>
+    <!-- main section start  -->
+    <main class="container mx-auto">
+      <!-- legal solution section  -->
+      <section class="mt-8 w-full h-full bg-center bg-cover lg:p-20 bg-right  " style="background-image: url(/images/banner.png);">
+        <div class="hero">
+          
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">We Provide Effective
+                Legal Solutions</h1>
+              <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority
+                have suffered alteration in some form, by injected humour.</p>
+                <div class="flex gap-8">
+                  <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                  <button class="btn btn-primary">Search</button>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer>
